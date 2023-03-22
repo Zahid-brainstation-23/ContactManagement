@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package contactmanagement.service;
 
-/**
- *
- * @author BS792
- */
+import contactmanagement.Entities.Contact;
+import java.util.List;
+
 public interface ContactService {
-    
+    void saveContact(Contact contact);
+    void deleteContact(Contact contact);
+    void deleteContact(String number);
+    List<Contact> getContactList();
 }
