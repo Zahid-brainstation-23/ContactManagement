@@ -8,20 +8,22 @@ public class DatabaseConnection {
     private DatabaseConnection() {
     }
     ;
-    Connection connection;
+   private static Connection connection;
 
-    Connection getConnection() {
+    public static Connection getConnection() {
         try {
             if (connection == null) {
-                Class.forName("com.mysql.jdbc.Driver");
-                Connection connection = DriverManager.getConnection(
+
+                connection = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/phonebook", "root", "");
+                System.out.println(connection);
             }
+
             return connection;
 
         } catch (Exception e) {
+
             return null;
         }
     }
 }
-

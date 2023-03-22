@@ -5,11 +5,20 @@ public class Contact {
     private String name;
     private String number;
     
-    void call(){
+    public Contact(String number,String name){
+        this.number = number;
+        this.name = name;
+    }
+    public void call(){
         System.out.println("calloing");
     }
-    void sendMassage(String message){
+    public void sendMassage(String message){
         System.out.println("Message Sent");
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" + "name=" + name + ", number=" + number + '}';
     }
     
 }
