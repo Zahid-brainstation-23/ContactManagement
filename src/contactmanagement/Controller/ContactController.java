@@ -5,12 +5,14 @@ import contactmanagement.Entities.Contact;
 import contactmanagement.service.ContactService;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ContactController implements ContactService {
 
     private ContactDao contactDao;
+
+    public ContactController() throws SQLException {
+        contactDao = new ContactDao();
+    }
 
     @Override
     public void saveContact(Contact contact) {
