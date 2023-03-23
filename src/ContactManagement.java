@@ -29,7 +29,7 @@ public class ContactManagement extends javax.swing.JFrame {
     }
 
     void init() {
-        x = 230;
+        x = 220;
         ind = 0;
         try {
             contactController = new ContactController();
@@ -81,9 +81,9 @@ public class ContactManagement extends javax.swing.JFrame {
         jLabel2.setAlignmentY(0.0F);
         jLabel2.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
-        jLabel3.setFont(new java.awt.Font("Gadugi", 1, 22)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel3.setText("Operation");
+        jLabel3.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel3.setText("ACTION");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
@@ -149,12 +149,7 @@ public class ContactManagement extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(15, 15, 15)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel4))
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(52, 52, 52)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -165,7 +160,12 @@ public class ContactManagement extends javax.swing.JFrame {
                                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel6))
                                 .addGap(28, 28, 28)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel4)))
                         .addGap(0, 14, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -182,7 +182,7 @@ public class ContactManagement extends javax.swing.JFrame {
 
         revalidate();
         repaint();
-        x = 230;
+        x = 220;
         ind = 0;
         showContactInLabel();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -232,9 +232,9 @@ public class ContactManagement extends javax.swing.JFrame {
         buttons = new JButton[contacts.size()];
 
         String con = "<html><body>";
-        con += "<span style='color:blue;font-family: Helvetica;font-weight:bold;font-size:20px'>Name</span>"
+        con += "<span style='color:blue;font-family: Georgia ;font-weight:bold;font-size:17px'>NAME</span>"
                 + " &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-                + " <span style='color:blue;font-family: Helvetica;font-weight:bold;font-size:20px'>Number</span><br>";
+                + " <span style='color:blue;font-family: Georgia ;font-weight:bold;font-size:17px'>NUMBER</span><br>";
 
         con += "**************************************************<br>";
         for (Contact contact : contacts) {
@@ -259,10 +259,9 @@ public class ContactManagement extends javax.swing.JFrame {
                     for (JButton button : buttons) {
                         remove(button);
                     }
-
                     revalidate();
                     repaint();
-                    x = 230;
+                    x = 220;
                     ind = 0;
                     showContactInLabel();
                 }
