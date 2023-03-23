@@ -29,7 +29,7 @@ public class ContactDao {
     }
 
     public void saveContact(Contact contact) throws SQLException {
-        String sql = "INSERT INTO contact('number','name') VALUES ('" + contact.getNumber() + "', '" + contact.getName() + "')";
+        String sql = "INSERT INTO contact(number,name) VALUES ('" + contact.getNumber() + "', '" + contact.getName() + "')";
         statement.executeUpdate(sql);
     }
 
