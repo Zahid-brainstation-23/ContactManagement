@@ -16,7 +16,6 @@ public class DatabaseConnection {
 
                 connection = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/phonebook", "root", "");
-                System.out.println(connection);
             }
 
             return connection;

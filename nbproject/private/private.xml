@@ -4,6 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/BS792/Documents/NetBeansProjects/ContactManagement/src/contactmanagement/ContactManagement.java</file>
+            <file>file:/C:/Users/BS792/Documents/NetBeansProjects/ContactManagement/src/contactmanagement/Dao/ContactDao.java</file>
+            <file>file:/C:/Users/BS792/Documents/NetBeansProjects/ContactManagement/src/contactmanagement/Controller/ContactController.java</file>
             <file>file:/C:/Users/BS792/Documents/NetBeansProjects/ContactManagement/src/contactmanagement/Entities/Contact.java</file>
             <file>file:/C:/Users/BS792/Documents/NetBeansProjects/ContactManagement/src/contactmanagement/Dao/DatabaseConnection.java</file>
             <file>file:/C:/Users/BS792/Documents/NetBeansProjects/ContactManagement/src/contactmanagement/service/ContactService.java</file>
